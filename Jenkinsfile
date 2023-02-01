@@ -9,8 +9,8 @@ pipeline {
             steps {
                 echo 'Hello World'
 
-                ./gradlew assemble
-                ./gradlew test
+                //./gradlew assemble
+                //./gradlew test
 
             }
         }

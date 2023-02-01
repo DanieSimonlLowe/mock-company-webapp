@@ -3,6 +3,9 @@ pipeline {
    * TODO: Implement pipeline stages/steps
    *   See documentation: https://www.jenkins.io/doc/book/pipeline/syntax/#stages
    */
-   ./gradlew build
-   ./gradlew test
+   withGradle {
+    sh './gradlew assemble'
+    sh './gradlew test'
+  }
+
 }
